@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Klasifikasi Daun Jeruk dan Kemangi</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <link href="/static/assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="/static/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/static/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="/static/assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <header id="header" class="d-flex align-items-center">
+    
+        <div class="container d-flex align-items-center justify-content-between">
+    
+          <h3 class="logo"><a href="index.html">TUGAS BESAR ARTIFICIAL INTELLIGENCE</a></h3>
+      </nav>
+
+    </div>
+  </header>
+
+  <section id="about" class="about">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left">
+            <img class="img-fluid w-100" src="{{ url_for('send_file', filename=image_file_name)}}"/>
+        </div>
+        <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right">
+          <h3>HASIL KlASIFIKASI</h3>
+          <p class="fst-italic">
+            Menentukan Klasifikasi Jenis Daun Dengan Presentase Persen
+          </p>
+          <br>
+          <br>
+          <br>
+          <div class="cd-flex align-items-center mb-4">
+            <h2 id ="pred" style="font-weight: bold; color:#353433;">
+              Hasil Klasifikasi <span style="font-weight: bold; color:#dd1d0f;">{{ label }}</span>
+            </h2>
+
+            <h2 style="font-weight: bold; color: #353433;" >
+              Presentase <span style="font-weight: bold; color:#dd1d0f;">{{ prob }}%</span>
+            </h2>
+            <br>
+            <br>
+            <br>
+            <a href="/" class="btn btn-dark">Back To Home</a>
+                </div>       
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+   <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-info">
+              <h3>ANGGOTA</h3>
+              <H4>1. Dimas Fahrul Rizal </H4>
+              <H4>2. Thirafi Buana Atharidi </H4>
+                         
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/static/assets/vendor/aos/aos.js"></script>
+  <script src="/static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/static/assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="/static/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="/static/assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="/static/assets/js/main.js"></script>
+
+</body>
+
+</html>
